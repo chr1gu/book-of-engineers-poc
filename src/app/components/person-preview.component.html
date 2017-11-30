@@ -1,0 +1,27 @@
+<div *ngIf="person">
+  <div class="img-positioner">
+    <div class="img-container">
+      <div class="img-sizer">
+        <img [defaultImage]="'/assets/loading.gif'" [lazyLoad]="person.avatar" />
+      </div>
+    </div>
+    <button class="left" (click)="back()">«</button>
+    <button class="right" (click)="shuffle()">»</button>
+  </div>
+  <h2>{{person.first_name}} {{person.last_name}}</h2>
+  <table>
+    <tr>
+      <td class="first-col">Department</td>
+      <td>{{person.department}}</td>
+    </tr>
+    <tr>
+      <td>E-Mail</td>
+      <td style="color:#0068ab">{{person.email}}</td>
+    </tr>
+    <tr>
+      <td>Hobbies</td>
+      <td>{{person.hobbies.join(", ")}}</td>
+    </tr>
+  </table>
+  <p>{{person.description}}</p>
+</div>

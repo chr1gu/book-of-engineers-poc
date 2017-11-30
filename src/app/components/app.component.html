@@ -1,0 +1,9 @@
+<h1>« The Book of Engineers »</h1>
+
+<div *ngIf="(data | async).length > 0">
+  <nav>
+    <a routerLink="/" routerLinkActive="active">1 of {{ (data | async).length }}</a> •
+    <a routerLink="/find" routerLinkActive="active">Find</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

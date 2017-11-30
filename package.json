@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~4.3.5",
     "@angular/router": "~4.3.5",
     "core-js": "~2.5.0",
-    "ng-lazyload-image": "^3.3.5",
+    "ng-lazyload-image": "^3.3.3",
     "rxjs": "~5.4.3",
     "zone.js": "~0.8.16"
   },
